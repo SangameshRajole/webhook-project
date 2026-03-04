@@ -7,5 +7,6 @@ app.post('/webhook', (req, res) => {
   res.status(200).json({ received: true });
 });
 
-app.listen(PORT, () => console.log(`Server running ✅`));
+module.exports = app; 
+
 
