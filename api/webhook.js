@@ -8,8 +8,6 @@ app.use(express.json());
 app.post('*', (req, res) => {
   console.log('Received:', req.body);
   res.status(200).json({ 
-    success: true, 
-    message: "Vercel handled this!",
     data: req.body 
   });
 });
